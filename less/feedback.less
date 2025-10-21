@@ -1,0 +1,101 @@
+.feedback{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    h2{
+        .head;
+        font-size: 30px;
+    }
+    p{
+        color: rgba(90, 90, 90, 0.562);
+        .txt;
+        margin-bottom: 50px;
+    }
+    .container{
+        width: 1100px;
+        margin: 0 auto;
+        .slider{
+            width: 100%;
+            .flex_between;
+            article{
+                width: 350px;
+                border: 2px solid rgba(90, 90, 90, 0.562);
+                border-radius: 15px;
+                padding: 10px;
+                margin-right: 20px;
+                p{
+                    margin-bottom: 0;
+                    text-align: left;
+                }
+                >div{
+                    .flex_between;
+                    margin-bottom: 20px;
+                    nav{
+                        text-align: left;
+                        transform: translateX(-90px);
+                    }
+                }
+                &:last-child{
+                    div{
+                        nav{
+                            transform: translateX(-120px)
+                        }
+                    }
+                }
+            }
+        }
+    }
+    >article{
+        padding: 10px 10px 0 10px;
+        width: 900px;
+        margin: 0 auto;
+        transform: translateY(130px);
+        border-radius: 20px;
+        box-shadow: 12px 18px 54px 0px rgba(0, 0, 0, 0.11);
+        background: rgb(255, 255, 255);
+        .flex_between;
+        div{
+            width: 250px;
+            text-align: left;
+            margin: 10px;
+            h3{
+                .head;
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+            p{
+                .txt;
+            }
+        }
+        button{
+            padding: 15px 50px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            .txt;
+            background: rgb(245, 56, 56);
+            color: white;
+            border: none;
+        }
+    }
+}
+
+
+.slick-prev, .slick-next {
+    font-size: 0; /* Скрывает стандартный текст */
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5); /* Темный фон для видимости */
+    border-radius: 50%;
+    z-index: 100;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    background: rgba(0, 0, 0, 0.8); /* Темнее при наведении */
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 20px;
+    color: white; /* Белые стрелки */
+}   

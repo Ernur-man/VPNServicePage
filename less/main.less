@@ -1,0 +1,83 @@
+.main{
+    width: 100%;
+    height: 100svh;
+    .container{
+        width: 1100px;
+        margin: 0 auto;
+        header{
+            width: 100%;
+            padding-top: 30px;
+            .flex_between;
+            menu{
+                .flex_between;
+                li{
+                    margin-right: 50px;
+                    .txt;
+                    color: black;
+                    transition: 0.3s;
+                    &:hover{
+                        color: rgb(245, 56, 56);
+                    }
+                }
+            }
+            nav{
+                .flex_between;
+                button{
+                    margin-right: 20px;
+                    border: none;
+                    background: none;
+                    .txt;
+                    color: black;
+                    &:last-child{
+                        color: rgb(245, 56, 56);
+                        font-size: 16px;
+                        font-weight: 400;
+                        box-sizing: border-box;
+                        border: 2px solid rgb(245, 56, 56);
+                        border-radius: 20px;
+                        padding: 8px;
+                    }
+                }
+            }
+        }
+        article{
+            width: 100%;
+            margin-top: 180px;
+            .flex_between;
+            aside{
+                width: 500px;
+                h1{
+                    .head;
+                    font-size: 40px;
+                    font-weight: 400;
+                    margin-bottom: 42px;
+                    span{
+                        font-weight: 600;
+                    }
+                }
+                p{
+                    .txt;
+                    margin-bottom: 54px;
+                }
+                button{
+                    border: none;
+                    color: rgb(255, 255, 255);
+                    font-size: 18px;
+                    font-weight: 600;
+                    border-radius: 20px;
+                    background: rgb(245, 56, 56);     
+                    padding: 10px 20px;  
+                    transition: 0.3s;
+                    &:hover{
+                        color: rgb(245, 56, 56);
+                        background-color: white;
+                    }
+                }
+                
+                >img{
+                    width: 70%;
+                }
+            }
+        }
+    }
+}

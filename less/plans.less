@@ -1,0 +1,83 @@
+.Alert{
+    width: 200px;
+    height: 70px;
+    background-color: bisque;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+.plans{
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    .container{
+        width: 1100px;
+        margin: 0 auto;
+        text-align: center;
+        h2{
+            .head;
+            font-size: 40px;
+            font-weight: 600;
+        }
+        p{
+            .txt;
+            margin-bottom: 60px;
+        }
+        article{
+            .flex_between;
+                
+            nav{
+                width: 300px;
+                padding: 30px 20px 30px 20px;
+                border: 2px solid rgba(128, 128, 128, 0.54);
+                border-radius: 10px;
+                text-align: center;
+                img{
+                    margin-bottom: 20px;
+                }
+                li{
+                    .txt;
+                    color:rgba(0, 0, 0, 0.847);
+                    margin-bottom: 30px;
+                    text-align: left;
+                    .flex_center;
+                    justify-content: start;
+                    &::before{
+                        content: url(../img/active.svg);
+                        margin-right: 15px;
+                    }
+                }
+                h2{
+                    .head;
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin-bottom: 30px;
+                }
+                h3{
+                    .head;
+                    font-size: 26px;
+                    font-weight: 500;
+                    span{
+                        font-weight: 500;
+                        color: rgba(0, 0, 0, 0.652);
+                    }
+                }
+                button{
+                    border: none;
+                    margin: 10px;
+                    .txt;
+                    color: white;
+                    font-size: 18px;
+                    border-radius: 20px;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                    background: rgb(245, 56, 56);
+                    padding: 10px 30px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+[
+    {
+        "txt": "Unlimited bandwitch",
+        "plan": "f"
+    },
+    {
+        "txt": "Encrypted connection",
+        "plan": "f"
+    },
+    {
+        "txt": "Yes trafic logs",
+        "plan": "f"
+    },
+    {
+        "txt": "Works on all devices",
+        "plan": "f"
+    },
+    {
+        "txt": "Connect anyware",
+        "plan": "f"
+    },
+    {
+        "txt": "Get new features",
+        "plan": "f"
+    },
+
+    {
+        "txt": "Unlimited bandwitch",
+        "plan": "s"
+    },
+    {
+        "txt": "Encrypted connection",
+        "plan": "s"
+    },
+    {
+        "txt": "Yes trafic logs",
+        "plan": "s"
+    },
+    {
+        "txt": "Works on all devices",
+        "plan": "s"
+    },
+    {
+        "txt": "Connect anyware",
+        "plan": "s"
+    },
+    {
+        "txt": "Get new features",
+        "plan": "s"
+    },
+
+    {
+        "txt": "Unlimited bandwitch",
+        "plan": "p"
+    },
+    {
+        "txt": "Encrypted connection",
+        "plan": "p"
+    },
+    {
+        "txt": "Yes trafic logs",
+        "plan": "p"
+    },
+    {
+        "txt": "Works on all devices",
+        "plan": "p"
+    },
+    {
+        "txt": "Connect anyware",
+        "plan": "p"
+    },
+    {
+        "txt": "Get new features",
+        "plan": "p"
+    }
+]
