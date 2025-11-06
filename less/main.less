@@ -7,6 +7,7 @@
         header{
             width: 100%;
             padding-top: 30px;
+            margin-bottom: 240px;
             .flex_between;
             menu{
                 .flex_between;
@@ -26,23 +27,23 @@
                     margin-right: 20px;
                     border: none;
                     background: none;
+                    transition: 0.3s;
                     .txt;
                     color: black;
-                    &:last-child{
-                        color: rgb(245, 56, 56);
-                        font-size: 16px;
-                        font-weight: 400;
-                        box-sizing: border-box;
-                        border: 2px solid rgb(245, 56, 56);
-                        border-radius: 20px;
-                        padding: 8px;
-                    }
+                    padding: 8px;
+                }
+                .activeBtn{
+                    color: rgb(245, 56, 56);
+                    font-size: 16px;
+                    font-weight: 400;
+                    box-sizing: border-box;
+                    border: 1px solid rgb(245, 56, 56);
+                    border-radius: 20px;
                 }
             }
         }
         article{
             width: 100%;
-            margin-top: 180px;
             .flex_between;
             aside{
                 width: 500px;

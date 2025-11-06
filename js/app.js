@@ -2,9 +2,28 @@ const uls = document.querySelectorAll('.tarif ul'),
     nav = document.querySelectorAll('.plans nav'),
     select_plan = document.querySelectorAll('.tarif button'),
     Alert = document.querySelector('Alert'),
-    win = document.querySelector('.window'),
     modal_window = document.querySelector('.modal_window'),
-    get_btn = document.querySelector('.get')
+    get_btn = document.querySelector('.get'),
+    signIn = document.querySelector(".signIn"),
+    signUp = document.querySelector(".signUp"),
+    modal_signUp =document.querySelector(".modal_signUp"),
+    modal_tarif = document.querySelector(".showTarif"),
+    windowTarif = document.querySelector(".windowTarif")
+
+
+
+signIn.addEventListener("click",(el)=>{
+     modal_window.style.display = 'flex'
+    signIn.classList.add("activeBtn")
+    signUp.classList.remove("activeBtn")
+})
+
+signUp.addEventListener("click", ()=>{
+    modal_signUp.style.display = "flex"
+    signIn.classList.remove("activeBtn")
+    signUp.classList.add("activeBtn")
+})
+
 
 
 // CHECK TARIF 
@@ -36,10 +55,13 @@ nav.forEach((el)=>{
         el.style.borderColor = 'red'
         const btn = element.target.tagName
         if(btn == 'BUTTON'){
-            modal_window.style.display = 'flex'
+            modal_tarif.style.display = 'flex'
             select_tarif = document.createElement('h3')
+            message = document.createElement('p')
+            message.textContent = "You chose " + el.children[1].textContent
             select_tarif.textContent = el.children[1].textContent
-            win.appendChild(select_tarif)
+            windowTarif.appendChild(select_tarif)
+            windowTarif.appendChild(message)
         }
     })
     el.addEventListener('dblclick',()=>{
@@ -55,18 +77,24 @@ nav.forEach((el)=>{
 modal_window.addEventListener('click', (el)=>{
     if(el.target.tagName != 'NAV' && el.target.tagName != 'INPUT'){
         modal_window.style.display = 'none'
-        win.innerHTML = ' '
+    }
+})
+
+modal_signUp.addEventListener("click", (el)=>{
+    if(el.target.tagName != 'NAV' && el.target.tagName != 'INPUT'){
+        modal_signUp.style.display = 'none'
+    }   
+})
+
+
+modal_tarif.addEventListener("click", (el)=>{
+    if(el.target.tagName != 'NAV' && el.target.tagName != 'INPUT'){
+        modal_tarif.style.display = 'none'
+        windowTarif.innerHTML = ``
     }
 })
 
 
-
 get_btn.addEventListener('click', ()=>{
     modal_window.style.display = 'flex'
-    win.innerHTML = `<form>
-                        <h2>Sign in</h2>
-                        <input type="text" placeholder="Name">
-                        <input type="text" placeholder="Phone number">
-                        <button>Send</button>
-                    </form>`
 })
