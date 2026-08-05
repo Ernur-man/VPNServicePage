@@ -17,24 +17,24 @@ body, textarea, button, input, a{
 }
 
 //mixins
-.flex_between{
+.flex_between(){
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.flex_center{
+.flex_center(){
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.txt{
+.txt(){
     color: rgb(90, 90, 90);
     font-size: 16px;
     font-weight: 400;
 }
 
-//h1, h2, h3 .. 
-.head{
+//h1, h2, h3 ..
+.head(){
     color: rgb(43, 43, 43);
     font-size: 50px;
     font-weight: 600;
@@ -44,16 +44,16 @@ body, textarea, button, input, a{
 .modal_window, .modal_signUp{
     width: 100%;
     height: 100%;
-    .flex_center;
+    .flex_center();
     position: fixed;
     display: none;
     background: rgba(0, 0, 0, 0.594);
-    background-size: cover; 
+    background-size: cover;
     .window{
-        .flex_center;
+        .flex_center();
         width: 350px;
         height: 300px;
-        background: white;  
+        background: white;
         border-radius: 10px;
         overflow: hidden;
         form{
@@ -61,10 +61,10 @@ body, textarea, button, input, a{
             height: 100%;
             padding: 20px;
             text-align: center;
-            .flex_between;
+            .flex_between();
             flex-direction: column;
             h2{
-                .head;
+                .head();
                 font-size: 25px;
                 margin-bottom: 30px;
             }
@@ -75,7 +75,7 @@ body, textarea, button, input, a{
                 width: 100%;
                 padding: 14px;
                 margin-bottom: 15px;
-                .txt;
+                .txt();
                 color: black;
                 font-size: 14px;
                 border-radius: 10px;
@@ -85,7 +85,7 @@ body, textarea, button, input, a{
             }
             button{
                 padding: 10px 70px;
-                .head;
+                .head();
                 font-size: 16px;
                 border: none;
                 background: rgb(245, 56, 56);
@@ -94,26 +94,26 @@ body, textarea, button, input, a{
             }
         }
     }
-}    
+}
 .showTarif{
     width: 100%;
     height: 100%;
-    .flex_center;
+    .flex_center();
     position: fixed;
     display: none;
     background: rgba(0, 0, 0, 0.594);
-    background-size: cover; 
+    background-size: cover;
     nav{
-        .flex_center;
+        .flex_center();
         flex-direction: column;
         width: 350px;
         height: 300px;
-        background: white;  
+        background: white;
         border-radius: 10px;
         overflow: hidden;
         text-align: center;
         h3{
-            .head;
+            .head();
             font-size: 18px;
             margin-bottom: 10px;
         }
